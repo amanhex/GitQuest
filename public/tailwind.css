@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  margin-top: 0rem;
+}
+
+html body{
+  background-color: #f6f8ff;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+button[type="submit"] {
+  margin-left: 0.5rem;
+}
+
+#profile {
+  margin-top: 2rem;
+}

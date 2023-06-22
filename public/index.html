@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitQuest</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+      position: relative;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 80px;
+      box-sizing: border-box;
+    }
+
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+      padding: 1rem;
+      background-color: #f3f4f6;
+      border-radius: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        max-width: 90%;
+      }
+    }
+
+    .github-icon {
+      display: block;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1rem;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background-color: transparent;
+    }
+
+    .social-icon {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 0.5rem;
+    }
+
+    .text-wrapper {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .text-gray-500 {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <h1 class="text-3xl font-bold text-center my-8">
+      <img src="/assets/github-icon.svg" alt="GitHub Icon" class="github-icon">
+      GitQuest
+    </h1>
+
+    <form action="/profile" method="POST" class="flex items-center">
+      <input type="text" name="username" placeholder="Enter a GitHub username"
+        class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow">
+      <button type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+    </form>
+
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/amansingh4958/" class="social-icon" target="_blank">
+        <img src="/assets/linkedin.svg" alt="Linkedin Icon">
+      </a>
+      <a href="https://github.com/amanhex" class="social-icon" target="_blank">
+        <img src="/assets/github-icon.svg" alt="Github Icon">
+      </a>
+      <a href="https://www.instagram.com/__.amann/" class="social-icon" target="_blank">
+        <img src="/assets/instagram-icon.svg" alt="Instagram Icon">
+      </a>
+    </footer>
+
+    <div class="text-wrapper">
+      <p class="text-gray-500">
+        &copy; 2023 Created by amanhex
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
