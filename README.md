@@ -54,7 +54,7 @@ node index.js
 
 4. Enter a GitHub username in the search field to view user information and repositories.
 
-### Contributing 🤝
+## Contributing 🤝
 
 Contributions are welcome! If you would like to contribute to GitQuest, please follow these steps:
 
@@ -68,5 +68,5 @@ Contributions are welcome! If you would like to contribute to GitQuest, please f
 
 5. Submit a pull request to the main repository.
 
-### License 📄
+## License 📄
 This project is licensed under the MIT License.
