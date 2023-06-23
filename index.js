@@ -19,11 +19,14 @@ app.post('/profile', async (req, res) => {
   const { username } = req.body;
 
   try {
-    const response = await axios.get(`https://api.github.com/users/${username}`);
+    const token = process.env.GITHUB_TOKEN;
+    const headers = { Authorization: `Bearer ${token}` };
+
+    const response = await axios.get(`https://api.github.com/users/${username}`, { headers });
     const data = response.data;
 
     if (data.login) {
-      const repositories = await axios.get(`https://api.github.com/users/${username}/repos`);
+      const repositories = await axios.get(`https://api.github.com/users/${username}/repos`, { headers });
       const repoData = repositories.data;
 
       res.render('profile', { user: data, repos: repoData });
