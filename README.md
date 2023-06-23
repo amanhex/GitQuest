@@ -40,7 +40,7 @@ GitQuest is a web application that allows users to search for GitHub profiles an
 3. Install the dependencies
 
    ```bash
-   npm install express axioms moments
+   npm install express axiom moment
    ```
 ### Usage 🖥️
 1. Create an environment containing your GITHUB_TOKEN.
