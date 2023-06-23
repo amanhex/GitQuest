@@ -43,15 +43,16 @@ GitQuest is a web application that allows users to search for GitHub profiles an
    npm install express axioms moments
    ```
 ### Usage 🖥️
+1. Create an environment containing your GITHUB_TOKEN.
 
-1. Start the application:
+2. Start the application:
 
 ```bash
 node index.js
 ```
-2. Open your web browser and visit http://localhost:3000.
+3. Open your web browser and visit http://localhost:3000.
 
-3. Enter a GitHub username in the search field to view user information and repositories.
+4. Enter a GitHub username in the search field to view user information and repositories.
 
 ### Contributing 🤝
 
